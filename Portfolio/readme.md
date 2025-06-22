@@ -24,5 +24,5 @@ Some features like the contact form are only layouts without backend logic. Proj
 
 For collaborations or questions, reach out via:
 
-- [Your Email]
-- [LinkedIn or other social links]
+- alaa3072003@gmail.com
+
