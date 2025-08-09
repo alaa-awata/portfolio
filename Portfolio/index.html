@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/images/icon.png" type="image/jpeg" />
+    <link rel="icon" href="./images/icon.png" type="image/jpeg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Portfolio</title>
@@ -17,7 +17,7 @@
     <header>
       <div class="header-content">
         <img
-          src="/images/logo.png"
+          src="./images/logo.png"
           alt="Logo"
           data-aos="zoom-in"
           data-aos-duration="400"
@@ -30,8 +30,24 @@
           <a href="#projects"><div>Projects</div> </a>
           <a href="#contact"><div>Contact me</div></a>
         </nav>
+        <button class="mobile-nav-toggle" aria-label="Toggle mobile navigation">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
     </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav">
+      <button class="mobile-nav-close" aria-label="Close mobile navigation">
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact me</a>
+    </nav>
     <!-- ----------------Hero------------------ -->
     <main class="hero" id="hero">
       <div class="hero-container">
@@ -47,7 +63,7 @@
           Full-Stack Developer passionate about creating seamless,
           high-performance digital solutions.
         </p>
-        <a href="/assets/CV/AlaaAwata-CV.pdf" download
+        <a href="./assets/CV/AlaaAwata_CV.pdf" download
           ><div
             class="downlod-btn"
             data-aos="zoom-in-up"
@@ -76,18 +92,19 @@
           data-aos-duration="800"
           data-aos-easing="ease-in-out"
         >
-          <a href="mailto:yourname@example.com" target="_blank"
-            ><i class="fas fa-envelope"></i
-          ></a>
-          <a href="https://www.linkedin.com/in" target="_blank"
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alaa3072003@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+        
+          <a href="https://www.linkedin.com/in/alaa-awata/" target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="https://wa.me" target="_blank">
+          <a href="https://wa.me/00963930709232" target="_blank">
             <i class="fab fa-whatsapp"></i
           ></a>
-          <a href="https://www.facebook.com" target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
+          <a href="https://github.com/alaa-awata" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
       <div class="hero-image" data-aos="zoom-in" data-aos-duration="900">
@@ -97,15 +114,21 @@
     <!-- ----------------About------------------ -->
     <section class="about-me scroll-animate" id="about">
       <div class="about-image">
-        <img src="/images/about-me.png" alt="About Me" />
+        <img src="images/about-me.png" alt="About Me" />
       </div>
       <div class="about-text">
         <h2>About Me</h2>
         <p>
-          Recent Computer Science graduate with strong programming skills and
-          experience in software development, robotics, and web applications.
-          Proficient in languages such as Java and C, and passionate about
-          solving complex problems through technology.
+          Experienced in building and maintaining scalable, high-performance web applications with hands-on
+           expertise in <b>React, Node.js, and Express.js.</b> Skilled in designing responsive
+            user interfaces and developing RESTful APIs. Proficient in managing both relational 
+            databases <b>(MySQL)</b> and NoSQL databases <b>(MongoDB)</b>, with solid experience in
+             backend development using <b>PHP/Laravel</b> as well as <b>Node.js/Express.js</b> environments. 
+             Adept at integrating third-party APIs, ensuring application security, 
+             and optimizing performance. Passionate about problem-solving and crafting 
+             efficient backend architectures. Graduate of the <b>Bytes4Future Full-Stack
+              Development</b> program by the Aga Khan Foundation, complemented by a <b>Bachelor’s
+               degree in Computer Science</b> from the <b>Lebanese International University (LIU)</b>.
         </p>
       </div>
     </section>
@@ -129,6 +152,16 @@
           <div class="education-icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
+        </div>   
+        <div class="education-card">
+          <div class="education-info">
+            <h3>Junior Full-Stack Developer</h3>
+            <p><strong>Bytes4Future</strong></p>
+            <p>Completed: <span>2025</span></p>
+          </div>
+          <div class="education-icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
         </div>
         <div class="education-card">
           <div class="education-info">
@@ -140,16 +173,7 @@
             <i class="fas fa-certificate"></i>
           </div>
         </div>
-        <div class="education-card">
-          <div class="education-info">
-            <h3>CyberOps Associate Certification</h3>
-            <p><strong>CISCO</strong></p>
-            <p>Completed: <span>2023</span></p>
-          </div>
-          <div class="education-icon">
-            <i class="fas fa-user-shield"></i>
-          </div>
-        </div>
+     
       </div>
     </section>
     <!-- ----------------skills------------------ -->
@@ -166,14 +190,14 @@
             />
             <path
               class="circle"
-              stroke-dasharray="90, 100"
+              stroke-dasharray="80, 100"
               d="M18 2.0845
                  a 15.9155 15.9155 0 0 1 0 31.831
                  a 15.9155 15.9155 0 0 1 0 -31.831"
             />
-            <text x="18" y="20.35" class="percentage">90%</text>
+            <text x="18" y="20.35" class="percentage">80%</text>
           </svg>
-          <p>HTML</p>
+          <p>React</p>
         </div>
         <div class="skill">
           <svg viewBox="0 0 36 36" class="circular-chart">
@@ -192,7 +216,7 @@
             />
             <text x="18" y="20.35" class="percentage">70%</text>
           </svg>
-          <p>CSS</p>
+          <p>Express.js</p>
         </div>
         <div class="skill">
           <svg viewBox="0 0 36 36" class="circular-chart">
@@ -223,14 +247,33 @@
             />
             <path
               class="circle"
-              stroke-dasharray="75, 100"
+              stroke-dasharray="50, 100"
               d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
             />
-            <text x="18" y="20.35" class="percentage">75%</text>
+            <text x="18" y="20.35" class="percentage">50%</text>
           </svg>
           <p>Java</p>
+        </div>
+        <div class="skill">
+          <svg viewBox="0 0 36 36" class="circular-chart">
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circle"
+              stroke-dasharray="80, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage">80%</text>
+          </svg>
+          <p>MongoDB</p>
         </div>
         <div class="skill">
           <svg viewBox="0 0 36 36" class="circular-chart">
@@ -249,7 +292,26 @@
             />
             <text x="18" y="20.35" class="percentage">50%</text>
           </svg>
-          <p>English</p>
+          <p>MySQL</p>
+        </div>
+        <div class="skill">
+          <svg viewBox="0 0 36 36" class="circular-chart">
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circle"
+              stroke-dasharray="60, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage">60%</text>
+          </svg>
+          <p>Laravel</p>
         </div>
       </div>
     </section>
@@ -260,47 +322,48 @@
       <div class="slider-container">
         <div class="project-slider">
           <div class="project-card">
-            <img src="/images/project1.jpeg" alt="Project 1" />
+            <img src="images/project1.jpg" alt="Project 1" />
             <div class="overlay">
-              <h3>Nest & Nook</h3>
-              <p>Elegant Home Furniture for Everyday Comfort</p>
+              <h3>Spax</h3>
+              <p> Modern real-time chat application.</p>
             </div>
           </div>
           <div class="project-card">
-            <img src="images/project2.jpeg" alt="Project 2" />
+            <img src="images/project2.jpg" alt="Project 2" />
             <div class="overlay">
-              <h3>Haven Living</h3>
-              <p>Modern Furniture Designs for Cozy Corners</p>
+              <h3>Senior Assistant</h3>
+              <p>Seniors connect with volunteers for assistance.</p>
             </div>
           </div>
           <div class="project-card">
-            <img src="images/project3.jpeg" alt="Project 3" />
+            <img src="images/project3.jpg" alt="Project 3" />
             <div class="overlay">
-              <h3>Kitchen Blueprint</h3>
-              <p>Design Spaces That Inspire Culinary Creativity</p>
+              <h3>Travelya</h3>
+              <p>Modern Syrian tourism guide platform.</p>
             </div>
           </div>
           <div class="project-card">
-            <img src="/images/project4.jpeg" alt="Project 4" />
+            <img src="images/project6.jpg" alt="Project 6" />
             <div class="overlay">
-              <h3>Glow Rituals</h3>
-              <p>Beauty & Makeup Essentials for Radiant You</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/images/project5.jpeg" alt="Project 5" />
-            <div class="overlay">
-              <h3>Thread & Form</h3>
-              <p>Curated Style Concepts for the Modern Wardrobe</p>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/images/project6.jpeg" alt="Project 6" />
-            <div class="overlay">
-              <h3>Brew Culture</h3>
+              <h3>Spotify</h3>
               <p>Coffee Moments That Start Your Story</p>
             </div>
           </div>
+          <div class="project-card">
+            <img src="images/project4.png" alt="Project 4" />
+            <div class="overlay">
+              <h3>Tic Tac Toe</h3>
+              <p>A simple Tic Tac Toe game built with React.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/project5.jpg" alt="Project 5" />
+            <div class="overlay">
+              <h3>Calculator</h3>
+              <p>A Full-Stack Calculator built with React and Node.js.</p>
+            </div>
+          </div>
+        
         </div>
         <div class="slider-nav">
           <button class="prev">&#10094;</button>

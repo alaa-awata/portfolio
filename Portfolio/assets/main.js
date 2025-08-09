@@ -47,4 +47,61 @@ const sections = document.querySelectorAll("section");
   });
   AOS.init()
 
+// Mobile Navigation Functionality
+const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileNavClose = document.querySelector('.mobile-nav-close');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+// Toggle mobile navigation
+mobileNavToggle.addEventListener('click', () => {
+  mobileNav.classList.add('active');
+  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+});
+
+// Close mobile navigation
+mobileNavClose.addEventListener('click', () => {
+  mobileNav.classList.remove('active');
+  document.body.style.overflow = ''; // Restore scrolling
+});
+
+// Close mobile navigation when clicking on a link
+mobileNavLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    
+    if (targetSection) {
+      // Close mobile nav first
+      mobileNav.classList.remove('active');
+      document.body.style.overflow = '';
+      
+      // Smooth scroll to target section
+      setTimeout(() => {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 300); // Small delay to ensure nav is closed
+    }
+  });
+});
+
+// Close mobile navigation when clicking outside
+document.addEventListener('click', (e) => {
+  if (!mobileNav.contains(e.target) && !mobileNavToggle.contains(e.target)) {
+    mobileNav.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+
+// Close mobile navigation on window resize (if screen becomes larger)
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    mobileNav.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+
   
