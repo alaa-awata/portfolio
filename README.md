@@ -2,7 +2,7 @@
 
 This is my personal portfolio website showcasing my front-end development skills. It includes sample projects, an about section, and a contact form layout (currently static, no backend functionality).
 
-🔗 **Live Site:** [alaa-awata11.w3spaces.com](https://alaa-awata11.w3spaces.com/)
+🔗 **Live Site:** [https://alaa-awata.github.io/portfolio/](https://alaa-awata.github.io/portfolio/)
 
 ## 🛠️ Built With
 
